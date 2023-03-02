@@ -42,9 +42,6 @@ export default async function (req, res) {
       result: `${response.data.choices[0].text}`
     });
   } catch(error) {
-    console.log('-- REPOSTA -- ');
-    console.log(response);
-    console.log('-- REPOSTA -- ');
     // Consider adjusting the error handling logic for your use case
     if (error.response) {
       console.error(error.response.status, error.response.data);

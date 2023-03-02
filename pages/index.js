@@ -33,8 +33,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>AC Intell</title>
-        <link rel="icon" href="/logo.png" />
+        <title>Open AI NodeJS</title>
       </Head>
 
       <main className={styles.main}>
