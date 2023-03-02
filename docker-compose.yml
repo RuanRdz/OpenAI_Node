@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  nodejs:
+    image: node
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: TEST
+    restart: always
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - "5000:3000"
